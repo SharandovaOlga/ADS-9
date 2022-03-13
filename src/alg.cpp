@@ -21,18 +21,15 @@ int cbinsearch(int *arr, int size, int value) {
         }
       }
       break;
-    }
-    else if (arr[b] > value) {
+    } else if (arr[b] > value) {
       c2 = b - 1;
-    }
-    else {
+    } else {
       c1 = b + 1;
     }
   }
   if (a == 0) {
     return 0;
-  }
-  else {
+  } else {
     return a;
   }
 }
